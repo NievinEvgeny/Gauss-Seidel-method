@@ -16,7 +16,7 @@ int converge(double ResPrev[n], double Res[n])
     return 1;
 }
 
-void diagonal(double A[][n + 1], double B[n])
+void diagonal(double A[][n], double B[n])
 {
     double k;
     for (int i = 0; i < n; i++)
@@ -30,7 +30,7 @@ void diagonal(double A[][n + 1], double B[n])
     }
 }
 
-void Calculation(double A[][n + 1], double B[n], double ResPrev[n], double Res[n])
+void Calculation(double A[][n], double B[n], double ResPrev[n], double Res[n])
 {
     double Temp;
 
@@ -49,7 +49,7 @@ int main()
 {
     int i, j;
 
-    double A[n][n + 1] /*Матрица*/, B[n] /*Правый столбец*/, Res[n] /*Результирующий массив*/, ResPrev[n];
+    double A[n][n] /*Матрица*/, B[n] /*Правый столбец*/, Res[n] /*Результирующий массив*/, ResPrev[n];
     FILE* in;
     FILE* out;
     in = fopen("input.txt", "r");
