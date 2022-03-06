@@ -1,6 +1,5 @@
 #include <math.h>
 #include <stdio.h>
-#include <stdlib.h>
 #define n 4 //разрядность матрицы
 double e = 0.00000000001;
 
